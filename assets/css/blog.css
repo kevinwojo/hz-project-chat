@@ -1,0 +1,435 @@
+/**
+ * Copyright 2005-2009 HUBzero Foundation, LLC.
+ * All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License,
+ * version 2 as published by the Free Software Foundation.
+ */
+
+/*
+
+	-- -- -- -- -- -- --
+	Project blog CSS
+	-- -- -- -- -- -- --
+
+*/
+
+/* Activity items
+--------------------------------------------- */
+	.activity-item {
+		padding: 1em;
+		border: 1px solid #e8ecf1;
+		margin-bottom: 2em;
+		-moz-box-shadow: 3px 3px 3px #e8ecf1;
+		-webkit-box-shadow: 3px 3px 3px #e8ecf1;
+		box-shadow: 3px 3px 3px #e8ecf1;
+	}
+	.item-control {
+		margin-bottom: 1.5em;
+	}
+	.item-time {
+		font-size: 85%;
+		width: 90%;
+		color: #bbbbbb;
+		margin-left: 0.5em;
+	}
+	.quote .actor {
+		font-size: 85%;
+	}
+
+/* Blog form
+--------------------------------------------- */
+
+	#blab {
+		width: 100%;
+	}
+	#blab fieldset {
+		padding: 0.5em 1em;
+		border: none;
+		float: none !important;
+		width: 97%;
+		margin: 1em 0 1em 0;
+		color: #777;
+		background: #F5F7F2;
+		border: 1px solid #DEE4CD;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	#blab textarea {
+		margin: 0;
+		height: 40px;
+		width: 98%;
+		padding: 0.2em;
+		display: block;
+		overflow: hidden;
+	}
+	#blab input, .content-feed .addcomment input {
+		width: auto;
+	}
+	.content-feed #blab input.blog-submit:hover {
+		cursor: pointer;
+	}
+	.blog-submit {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+	#blog-submitarea {
+		padding: 0;
+		margin: 0;
+		text-align: right;
+		width: 100%;
+	}
+	#blog-submitarea .btn {
+		margin-top: 0.5em;
+		margin-right: 0.5em;
+	}
+	#blog-submitarea input {
+		float: right;
+	}
+	.blog-time {
+		font-size: 85%;
+		float: right;
+		color: #999;
+		margin-left: 2em;
+		margin-right: 0.5em ;
+	}
+
+/* Side blocks
+--------------------------------------------- */
+
+	.content-feed .sidebox {
+		margin-bottom: 2em;
+		margin-top: 1em;
+	}
+	.content-feed .sidebox h4 a.hlink, .content-feed .sidebox h4 a.hlink:hover {
+		border: none;
+		color: #333;
+	}
+	.content-feed .sidebox p, .sidebox p {
+		margin-top: 0;
+		padding: 0.5em;
+	}
+	.content-feed .sidebox p.editing {
+		padding-top: 0;
+	}
+	.content-feed .sidebox h4 span, #hubForm .infofeed h4 span {
+		float: right;
+		font-weight: normal;
+		font-size: 85%;
+	}
+
+/* News feed
+--------------------------------------------- */
+	.infofeed {
+		margin-bottom: 2em;
+	}
+	.infofeed h4, .sumup {
+		padding: 0.3em 0.5em;
+		background: #ededed;
+		border-top: 1px solid #cccccc;
+	}
+	.infofeed .editing {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 0.5em;
+		border-bottom: 1px solid #ececec;
+	}
+	.infofeed .body, .infofeed .fullbody {
+		color: #000;
+		margin: 0;
+		padding: 0 3em 0 0;
+		display: inline-block;
+		text-align: justify;
+	}
+	.infofeed .fullbody {
+		margin: 1.5em 1em 1em 5em;
+	}
+	.infofeed .comment-show .fullbody {
+		margin: 0;
+		font-size: 90%;
+	}
+	.infofeed .newline {
+		display: block;
+		margin: 1.5em 1em 0 5em;
+	}
+	.infofeed span.actor {
+		font-weight: bold;
+		color: #666;
+	}
+	.infofeed .confirmaction {
+		font-size: 85%;
+		padding-top: 0;
+	}
+	.infofeed .confirmaction p {
+		text-align: center;
+	}
+	.infofeed .activity:before {
+		position: relative;
+	}
+	.infofeed .activity {
+		color: #666;
+	}
+	.infofeed . blog-content {
+		padding-left: 5em;
+	}
+	.activity-item:hover .m_options, .activity-item:hover .quote:hover .m_options {
+		display: block;
+	}
+	.activity-item:hover .quote .m_options {
+		display: none;
+	}
+	.com_projects .infofeed .activity:before {
+		color: #CCC;
+	}
+	.infofeed .admin:before {
+		color: #fce48a;
+	}
+	.admin-action:before {
+		color: #fce48a !important;
+	}
+	.infofeed .blog-item img.blog-author,
+	.infofeed .blog-item img.project-image {
+		float: left;
+		margin-right: 1.5em;
+		width: 40px;
+	}
+	.infofeed .blog-item img.project-image {
+		width: 50px;
+		margin-bottom: 2em;
+	}
+	.infofeed .sameline:before {
+		content: ":";
+		width: 1em;
+		height: 1em;
+		font-size: 1em;
+		color: #aaa;
+		margin-right: 0.3em;
+		margin-top: -0.1em;
+	}
+	.infofeed .newline {
+		margin-bottom: -1.5em !important;
+	}
+	.infofeed .comment-show .more-content {
+		float: right;
+	}
+
+/* New item
+--------------------------------------------- */
+	.infofeed .newitem, #plg-content .comments li.newitem {
+		background: #fff6ef;
+		border-right: 5px solid #f5ddcc;
+		padding-bottom: 1em;
+	}
+	.infofeed .newitem:hover {
+		background: #fcf1e9 !important;
+	}
+	.infofeed .newitem .blog-time,
+	#plg-content .comments li.newitem .c-time {
+		color: red;
+	}
+	.infofeed .newitem .blog-item div.previewnet {
+		background: #FFFFFF;
+	}
+
+/* On-mouseover item options (in listings)
+--------------------------------------------- */
+	.m_options {
+		display: none;
+		font-size: 100%;
+		color: #999;
+		float: right;
+		margin: 0;
+		padding: 0;
+		margin-top: -1.2em;
+		margin-right: 0.2em;
+	}
+	.quote .m_options {
+		margin: 0;
+		margin-right: -0.5em;
+	}
+	.m_options span {
+		position: absolute;
+		display: block;
+		padding: 0;
+		margin-left: 0;
+	}
+	.m_options span a {
+		border: 1px solid #CCC;
+		margin: 0;
+		padding: 0 0.3em;
+		background: #FFF;
+		color: #CCC;
+	}
+	.m_options span a:hover {
+		border: 1px solid #333;
+		padding: 0 0.3em;
+		background: #333;
+		color: #FFF;
+	}
+
+/* Preview net
+--------------------------------------------- */
+	.photos {
+	   /* Prevent vertical gaps */
+		line-height: 0;
+		-webkit-column-count: 5;
+		-webkit-column-gap:   0px;
+		-moz-column-count:    5;
+		-moz-column-gap:      0px;
+		column-count:         5;
+		column-gap:           0px;
+		margin-top: 1.5em;
+		overflow: hidden;
+		background: #e4ecee;
+		*display: none; /* doesn't work in IE <10 */
+		border: 5px solid #e4ecee;
+	}
+	.photos img {
+	  /* Just in case there are inline attributes */
+		width: auto !important;
+		height: 100% !important;
+	}
+	.photos span {
+		width: 100% !important;
+		min-width: 100px;
+		min-height: 100px;
+		height: auto;
+		display: inline-block;
+		background-size: cover !important;
+	}
+	.photos.grid4 {
+	  -moz-column-count:    4;
+	  -webkit-column-count: 4;
+	  column-count:         4;
+	 }
+	.photos.grid5 {
+	  -moz-column-count:    5;
+	  -webkit-column-count: 5;
+	  column-count:         5;
+	 }
+	.photos.grid1 {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	 }
+	.photos.grid2 {
+	  -moz-column-count:    2;
+	  -webkit-column-count: 2;
+	  column-count:         2;
+	 }
+	.photos.grid3 {
+	  -moz-column-count:    3;
+	  -webkit-column-count: 3;
+	  column-count:         3;
+	 }
+	@media (max-width: 800px) {
+	  .photos.grid4 {
+	  -moz-column-count:    2;
+	  -webkit-column-count: 2;
+	  column-count:         2;
+	  }
+	}
+
+/* Comment Form
+--------------------------------------------- */
+	#plg-content .addcomment fieldset {
+		border: none;
+		margin: 0;
+		color: #777;
+		padding: 0.5em;
+	}
+	#plg-content .addcomment textarea {
+		margin: 0;
+		height: 30px;
+		width: 100%;
+		padding: 0.2em;
+		display: block;
+		overflow: hidden;
+		margin-top: 0.5em;
+	}
+	#plg-content .addcomment label {
+		padding: 0;
+		margin: 0;
+		display: block;
+		margin-right: 1.5em;
+	}
+	#plg-content .comments,
+	#project-updates .comments {
+		list-style: none;
+		padding: 0.5em 0 0 0;
+		margin: 1em 0 0 0;
+		border: none;
+		width: 100%;
+		background: #f4f6f8;
+	}
+	#plg-content .comments li,
+	#project-updates .comments li {
+		margin: 0;
+		border: none;
+		padding: 0.5em 2em 0.5em 0.5em;
+		color: #777;
+		border-bottom: 1px solid #FFF;
+		margin-right: 0;
+		clear: none;
+		padding-left: 4em !important;
+	}
+	#plg-content .comments .body,
+	#project-updates .comments .body {
+		font-size: 90%;
+	}
+	#plg-content .addcomment {
+		padding-left: 2em;
+		background: #f4f6f8;
+	}
+	#plg-content .newitem .comments,
+	#project-updates .newitem .comments,
+	#plg-content .newitem .addcomment {
+		background: #fff6ef;
+	}
+	#plg-content .comments li,
+	#plg-content .addcomment fieldset {
+		padding-left: 2em;
+	}
+	.comment-show {
+		display: block;
+		margin-left: 3.5em !important;
+	}
+	.comment-details {
+		display: block;
+	}
+	img.comment-author {
+		float: left;
+		margin-right: 0.5em;
+		margin-top: 0.5em;
+		width: 30px;
+	}
+/* Misc
+--------------------------------------------- */
+
+
+/* IE7 hacks
+--------------------------------------------- */
+
+	#blab input.blog-submit {
+		*text-align: center;
+	}
+	#blab {
+		*margin-bottom: 2em;
+	}
+	#blog-submitarea {
+		*padding-bottom: 1em;
+	}
+	#hubForm .infofeed h4 span, .content-feed .sidebox h4 span {
+		*margin-top: -1.5em;
+	}
+	#blab fieldset {
+		*padding-left: 35px;
+		*background: #F5F7F2 url("images/talker_big.gif") 0 5px no-repeat;
+		*width: 93%;
+	}
+	.infofeed span.body {
+		*padding: 0 100px 0 20px;
+	}
